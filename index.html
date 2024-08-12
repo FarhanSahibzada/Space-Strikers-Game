@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space war game</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+
+<div class="displays">
+    <div>
+        <h3>Welcome to Space Striker:</h3>
+        <h5 style="margin-top: 5px;">Rules:</h5>
+        <p>⭐ If your fire hits an enemy, you will get 1 point.</p>
+        <p>⭐ If an enemy crosses your path and exits the field, the game is over.</p>
+        <p>⭐ If your ship hits an enemy, the game is over.</p>
+    </div>
+    <button id="start"> Start</button>
+</div>
+
+    <canvas id="board"></canvas>
+
+    <div class="displaya">
+        <div>
+            <h3>Play Again:</h3>
+            <p style="text-align: center; margin-top: 20px;">Your score is <span id="showscore"></span></p>
+
+        </div>
+        <button id="again">Play again</button>
+    </div>
+
+    <div class="shortbtn">
+        <div class="fireebtn" id="firebtn">
+            <i class="fa-solid fa-fire" id="firebtn" style="color: #ffffff;"></i>
+        </div>
+        <div class="mobbtn">
+            <div style="display: flex; justify-content: center;">
+                <button id="up">Up</button>
+            </div>
+            <div style="display: flex; justify-content: center; gap: 10px;">
+                <button id="left">Left</button>
+                <button id="right">Right</button>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <button id="down">Down</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

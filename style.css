@@ -1,0 +1,300 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sankofa+Display&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body {
+    overflow-x: hidden !important;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 10px;
+    overflow-x: hidden !important;
+    flex-direction: column;
+    background-image: url(images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+#board {
+    background-color: rgba(0, 0, 0, 0.60);
+    box-shadow: 1px 1px 10px wheat;
+  
+}
+.displays{
+    padding: 20px;
+    position: absolute;
+    color: white;
+    border-radius: 12px;
+    background-color: rgb(88, 82, 82);
+    box-shadow: 1px 1px 10px rgba(255, 255,50 ,0.2);
+}
+#start{
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    margin-top: 12px;
+    padding: 6px 12px;
+    border: none;
+    background-color: rgba(255, 0, 0, 0.575);
+    font-size: 18px;
+    color: white;
+    font-family:  "Bebas Neue", sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    
+}
+.displaya{
+    background-color: whitesmoke;
+    padding: 20px 50px;
+    position: absolute;
+    color: white;
+    border-radius: 12px;
+    background-color: rgb(88, 82, 82);
+    box-shadow: 1px 1px 10px rgba(255, 255,50 ,0.2);
+    display: none;
+}
+#again{
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    margin-top: 12px;
+    padding: 6px 12px;
+    border: none;
+    background-color: rgba(255, 0, 0, 0.575);
+    font-size: 18px;
+    color: white;
+    font-family:  "Bebas Neue", sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    
+} */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sankofa+Display&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    overflow-x: hidden !important;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 10px;
+    overflow-x: hidden !important;
+    flex-direction: column;
+    background-image: url(images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#board {
+    background-color: rgba(0, 0, 0, 0.60);
+    box-shadow: 1px 1px 10px wheat;
+}
+
+.displays {
+    padding: 20px;
+    position: absolute;
+    color: white;
+    border-radius: 12px;
+    background-color: rgb(88, 82, 82);
+    box-shadow: 1px 1px 10px rgba(255, 255, 50, 0.2);
+    max-width: 400px;
+    /* Add max-width */
+    width: 90%;
+    /* Ensure it doesn't exceed 90% of the viewport width */
+}
+
+#start,
+#again {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    margin-top: 12px;
+    padding: 6px 12px;
+    border: none;
+    background-color: rgba(255, 0, 0, 0.575);
+    font-size: 18px;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.displaya {
+    padding: 20px 50px;
+    position: absolute;
+    color: white;
+    border-radius: 12px;
+    background-color: rgb(88, 82, 82);
+    box-shadow: 1px 1px 10px rgba(255, 255, 50, 0.2);
+    display: none;
+    max-width: 400px;
+    /* Add max-width */
+    width: 90%;
+    /* Ensure it doesn't exceed 90% of the viewport width */
+}
+
+.shortbtn{
+    position: relative;
+    width: 100vw;
+}
+.fireebtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-color: rgb(255, 0, 0);
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    letter-spacing: 2px;
+    font-family: "Bebas Neue", sans-serif;
+    position: absolute;
+    right: 10px;
+}
+
+#right {
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-weight: 700;
+    border: none;
+    background-color: rgba(255, 0, 0, 0.575);
+    font-size: 18px;
+    margin-left: 10px;
+    color: white;
+    letter-spacing: 2px;
+    border-radius: 12px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+#up,#down,#left {
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-weight: 700;
+    border: none;
+    background-color: rgba(255, 0, 0, 0.575);
+    font-size: 18px;
+    color: white;
+    letter-spacing: 2px;
+    font-family: "Bebas Neue", sans-serif;
+    border-radius: 12px;
+}
+
+/* Mobile Devices */
+@media (max-width: 600px) {
+    #board {
+        width: 100%;
+        min-height: 70vh;
+        height: auto;
+        box-shadow: 1px 1px 8px wheat;
+    }
+
+    .displays,
+    .displaya {
+        padding: 15px;
+        width: 90%;
+        box-shadow: 1px 1px 8px rgba(255, 255, 50, 0.2);
+    }
+
+    #start,
+    #again {
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+
+    #board {
+        width: 90%;
+        height: 80vh;
+        box-shadow: 1px 1px 9px wheat;
+    }
+
+    .displays,
+    .displaya {
+        padding: 18px;
+        width: 80%;
+        box-shadow: 1px 1px 9px rgba(255, 255, 50, 0.2);
+    }
+
+    #start,
+    #again {
+        padding: 6px 12px;
+        font-size: 17px;
+    }
+    .fireebtn{
+        right: 60px !important;
+    }
+}
+
+/* Tablets and Small Desktops */
+@media (min-width: 801px) and (max-width: 1024px) {
+    #board {
+        width: 80%;
+        height: auto;
+        box-shadow: 1px 1px 9px wheat;
+    }
+
+
+    .displays,
+    .displaya {
+        padding: 18px;
+        width: 80%;
+        box-shadow: 1px 1px 9px rgba(255, 255, 50, 0.2);
+    }
+
+    #start,
+    #again {
+        padding: 6px 12px;
+        font-size: 17px;
+    }
+    .shortbtn{
+        display: none;
+    }
+    
+}
+
+/* Large Desktops */
+@media (min-width: 1025px) {
+    #board {
+        width: 60%;
+        height: auto;
+        box-shadow: 1px 1px 10px wheat;
+    }
+
+    .displays,
+    .displaya {
+        padding: 20px;
+        width: 70%;
+        box-shadow: 1px 1px 10px rgba(255, 255, 50, 0.2);
+    }
+
+    #start,
+    #again {
+        padding: 6px 12px;
+        font-size: 18px;
+    }
+    .shortbtn{
+        display: none;
+    }
+}
